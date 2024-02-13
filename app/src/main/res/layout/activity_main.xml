@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="146dp"
+        android:text="Kalkulator spalania"
+        android:textSize="25dp"
+        android:fontFamily="@font/lato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fuelUsed"
+        android:layout_width="313dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="49dp"
+        android:fontFamily="@font/lato"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="49dp"
+        android:ems="10"
+        android:hint="Spalone paliwo w litrach"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/runKilometres"
+        android:layout_width="313dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="49dp"
+        android:fontFamily="@font/lato"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:ems="10"
+        android:hint="Ilość przejechanych kilometrów"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuelUsed" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="313dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="49dp"
+        android:fontFamily="@font/lato"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:ems="10"
+        android:hint="Cena za litr paliwa"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/runKilometres" />
+
+    <Button
+        android:id="@+id/countButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="@color/darkGreen"
+        android:text="Przelicz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
